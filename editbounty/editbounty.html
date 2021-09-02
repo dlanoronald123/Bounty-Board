@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="editbounty.css">
+    <title>Edit Bounty</title>
+</head>
+<body>
+      <nav class="navbar" id="nav">
+        <div class="container-fluid">
+          <a class="navbar-brand" id="navTitle">💰 BOUNTY BOARD</a>
+          <form class="d-flex">
+            <button class="btn btn-warning" id="logout" type="submit">Log Out</button>
+          </form>
+        </div>
+      </nav>
+      <h4 id="accName">Hello my friend.</h4>
+      <div class="container">
+            <h3 id='editTag'>Edit Bounty</h3>
+
+            <form method="POST" class="editBountyForm" novalidate="">
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <input id="project" placeholder="Project" class="form-control" name="project" value="" required autofocus>
+                        </div>
+        
+                        <div class="form-group col-md-6">
+                            <input id="bounty_title"  placeholder="Bounty Title" class="form-control" name="title" value="" required autofocus>
+                        </div>
+                    </div>  
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <input id="reward" placeholder="Reward Point" class="form-control" name="reward" value="" required autofocus>
+                        </div>
+        
+                        <div class="form-group col-md-6">
+                            <!-- <input id="urgency"  placeholder="Urgency" class="form-control" name="urgency" value="" required autofocus> -->
+                            <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                              <option selected>Urgency</option>
+                              <option value="1">Low</option>
+                              <option value="2">Medium</option>
+                              <option value="3">High</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <input id="type" placeholder="Type" class="form-control" name="type" required data-eye>
+                        </div>
+        
+                        <div class="form-group col-md-6">
+                            <input id="type" type="date" placeholder="Deadline" class="form-control" name="deadline" required data-eye>
+                        </div>
+                    </div>
+        
+                <div class="form-group">
+                    <!-- <input id="description" type="description" placeholder="Description" class="form-control" name="description" required data-eye> -->
+                    <textarea class="form-control" id="description" placeholder="Description" rows="3"></textarea>
+                </div>
+
+                <div class="form-group m-0">
+                    <button type="submit" class="btn btn-block">
+                        Save
+                    </button>
+                </div>
+            </form>
+      </div>
+      <div class="footer">
+        Copyright &copy; 2021 &mdash; RAD Gaming Guild 
+      </div>
+
+
+
+      <script src=""></script>
+</body>
+</html>
