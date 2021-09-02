@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="editacc.css">
+    <title>Edit Account</title>
+</head>
+<body>
+      <nav class="navbar" id="nav">
+        <div class="container-fluid">
+          <a class="navbar-brand" id="navTitle">💰 BOUNTY BOARD</a>
+          <form class="d-flex">
+            <button class="btn btn-warning" id="logout" type="submit">Log Out</button>
+          </form>
+        </div>
+      </nav>
+      <h4 id="accName">Hello my friend.</h4>
+      <div class="container">
+            <h3 id='editTag'>Edit Account</h3>
+
+            <form method="POST" class="editAccountForm" novalidate="">
+                <div class="form-group">
+                    <input id="email" type="email" placeholder="Email address" class="form-control" name="email" value="" required autofocus>
+                    <div class="invalid-feedback">
+                        Email is invalid
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <input id="username" type="username" placeholder="Username" class="form-control" name="email" value="" required autofocus>
+                    <div class="invalid-feedback">
+                        Username is invalid
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <input id="password" type="password" placeholder="Password" class="form-control" name="password" required data-eye>
+                    <div class="invalid-feedback">
+                        Password is required
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <input id="password" type="password" placeholder="Confirm Password" class="form-control" name="password" required data-eye>
+                    <div class="invalid-feedback">
+                        Password is required
+                    </div>
+                </div>
+
+                <div class="form-group m-0">
+                    <button type="submit" class="btn btn-block">
+                        Save
+                    </button>
+                </div>
+            </form>
+      </div>
+      <div class="footer">
+        Copyright &copy; 2021 &mdash; RAD Gaming Guild 
+      </div>
+
+
+
+      <script src=""></script>
+</body>
+</html>
