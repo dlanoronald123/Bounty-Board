@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+html,body {
+	height: 100%;
+    width: 100%;
+    background-color: #f7f9fb;
+	font-size: 14px;
+    
+}
+
+#nav{
+    background-color: #7E6DF7;
+}
+
+
+#navTitle{
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+    margin-left: 4rem;   
+}
+
+#logout{
+    margin-right: 4rem; 
+}
+
+#accName{
+    margin-left: 8rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    color: grey;
+}
+
+.container{
+    display:flex;
+    flex-direction: column;
+    padding:2rem;
+    flex-wrap: wrap;
+    margin-bottom: 3rem;
+    width: 90rem;
+    border: 1px solid gray;
+    box-shadow: 0 14px 15px rgba(0,0,0,0.8);
+    background-color:rgba(0,0,0,.05);
+}
+
+.approvalContainer{
+    display: flex;
+    padding: 1rem;
+}
+
+.card{
+    border-radius: 20px;
+    box-shadow: 0 14px 15px rgba(0,0,0,0.8);
+    background-color:rgba(0,0,0,.05);
+
+}
+
+.btn{
+    background-color: #7E6DF7;
+    border-radius: 20px;
+}
+
+.footer {
+	margin: 30px;
+	color: #888;
+	text-align: center;
+}
